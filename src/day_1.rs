@@ -18,7 +18,6 @@ pub fn part_2() -> Result<(), Box<dyn std::error::Error>> {
         ).collect::<Vec<i32>>();
     sorted.sort();
     let solution:i32 = sorted.into_iter().rev().take(3).sum();
-
     println!("{}", solution);
     Ok(())
 }
