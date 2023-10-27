@@ -37,7 +37,6 @@ pub fn part_2() -> Result<(), Box<dyn std::error::Error>> {
                 let (min1,max1) = if x[0].0 > x[0].1 { (x[0].1,x[0].0) } else { x[0] };
                 let (min2,max2) = if x[1].0 > x[1].1 { (x[1].1,x[1].0) } else { x[1] };
                 
-                // 1-1, 1-2
                 (min1 >= min2 && min1 <= max2)      // min1 is in range2
                 || (max1 >= min2 && max1 <= max2)   // max1 is in range2
                 || (min2 >= min1 && min2 <= max1)   // min2 is in range1
